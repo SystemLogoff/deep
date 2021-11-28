@@ -3,10 +3,16 @@
 ██╔══██╗██╔════╝██╔════╝██╔══██╗
 ██║  ██║█████╗  █████╗  ██████╔╝
 ██║  ██║██╔══╝  ██╔══╝  ██╔═══╝ 
-██████╔╝███████╗███████╗██║     
+██████╔╝███████╗███████╗██║     [SLOG]
 ╚═════╝ ╚══════╝╚══════╝╚═╝     
 ```
 
+# Changes
+    * Reset the maxIndex every time the Execute completes, this will fix deep counting up to the highest queue number each time.
+    * Added a hack to force something to the end of the draw stack. This was created to allow always on top tiles.
+    * To use this hack, use -1 as the queue number.
+
+# Original Readme
 **deep** is a tiny library for queuing and executing actions in sequence. 
 
 This functionality can be used in multiple ways, one of which is for [**LÖVE**](https://love2d.org),
